@@ -1,0 +1,13 @@
+{
+  "name": "qa-playbook",
+  "version": "0.1.0",
+  "description": "Certify an AI-built project: every promise ends VERIFIED, BROKEN or UNPROVEN, with the command and commit as evidence.",
+  "author": {
+    "name": "Ahmed Sadek",
+    "url": "https://github.com/ahmed-sadek-dev"
+  },
+  "homepage": "https://github.com/ahmed-sadek-dev/qa-playbook",
+  "repository": "https://github.com/ahmed-sadek-dev/qa-playbook",
+  "license": "MIT",
+  "keywords": ["qa", "verification", "testing", "audit", "ai-generated-code", "claude-code"]
+}

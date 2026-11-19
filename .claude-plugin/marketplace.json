@@ -1,0 +1,20 @@
+{
+  "name": "qa-playbook",
+  "metadata": {
+    "description": "Certify an AI-built project: every promise ends VERIFIED, BROKEN or UNPROVEN, with evidence.",
+    "version": "0.1.0"
+  },
+  "owner": {
+    "name": "Ahmed Sadek",
+    "url": "https://github.com/ahmed-sadek-dev"
+  },
+  "plugins": [
+    {
+      "name": "qa-playbook",
+      "source": "./",
+      "description": "Certify an AI-built project: every promise ends VERIFIED, BROKEN or UNPROVEN, with evidence.",
+      "category": "development",
+      "version": "0.1.0"
+    }
+  ]
+}
