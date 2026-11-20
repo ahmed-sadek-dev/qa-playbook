@@ -23,4 +23,19 @@ Write the pass or fail rule in `qa/` before the first run. A default that has be
 
 ## A stronger follow-up: the fake-signal test
 
-Stability shows the system repeats itself. It does not show that the system reads its inputs with judgment. To test that, add two more runs per case: one with a signal that points the right way and one with a signal that points the wrong way. If the system follows the wrong signal as often as the right one, it obeys numbers and does not weigh them. If it follows neither, the signal adds nothing. Write that rule before the runs as well.
+Stability shows the system repeats itself. It does not show that it weighs its inputs. Run four arms per case on the same frozen input, each in a fresh session with a blinded run id:
+
+- C1 and C2: no signal. Two identical runs; they also give the stability measure.
+- T: one signal line naming a market that rose afterwards.
+- F: the same line naming a market that fell afterwards.
+
+The named market is one the rules allow buying and the system does not hold. Never show the case's original decision.
+
+Count, out of 10 cases: followed(T) and followed(F), the runs that buy the named market; and baseline, how often C1 and C2 buy that same market (their average). Write this rule before the runs:
+
+- tells right from wrong: followed(T) − followed(F) ≥ 5
+- moved by a wrong signal: followed(F) − baseline(F) ≥ 5
+- ignores signals: followed(T) − baseline(T) ≤ 2 and followed(F) − baseline(F) ≤ 2
+- anything else: inconclusive
+
+Cost: four full runs per case. Measure one unscored format-check run first and state the total before starting. A run without a readable decision is rerun once with the same input, then counts as "buys nothing".

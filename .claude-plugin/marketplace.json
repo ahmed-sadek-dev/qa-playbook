@@ -2,7 +2,7 @@
   "name": "qa-playbook",
   "metadata": {
     "description": "Certify an AI-built project: every promise ends VERIFIED, BROKEN or UNPROVEN, with evidence.",
-    "version": "0.1.0"
+    "version": "0.2.0"
   },
   "owner": {
     "name": "Ahmed Sadek",
@@ -14,7 +14,7 @@
       "source": "./",
       "description": "Certify an AI-built project: every promise ends VERIFIED, BROKEN or UNPROVEN, with evidence.",
       "category": "development",
-      "version": "0.1.0"
+      "version": "0.2.0"
     }
   ]
 }

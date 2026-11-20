@@ -1,6 +1,6 @@
 ---
 name: certify
-description: Certify an AI-built project in seven steps. Use when asked to QA, verify, audit or sign off a codebase that AI agents wrote, to prove or disprove "it works", to map what is unsafe to run, to write a contract of promises, to build a test gate, or to check whether an LLM decision system gives the same answer twice. Every promise ends VERIFIED, BROKEN or UNPROVEN with evidence.
+description: Certify an AI-built project in seven steps. Use when asked to QA, verify, audit or sign off a codebase that AI agents wrote, to prove or disprove "it works", to map what is unsafe to run, to write a contract of promises, to build a test gate, to check whether an LLM decision system gives the same answer twice, or whether a system's picks beat random entries. Every promise ends VERIFIED, BROKEN or UNPROVEN with evidence.
 ---
 
 # Certify an AI-built project
@@ -48,7 +48,7 @@ Read `references/steps.md` for the prompt of the step you are on. One step per s
 6. **Screen.** Every number shown equals the verified number, and every button does what the contract says.
 7. **Independent review, fixes, report.**
 
-If an LLM picks, rates or decides anything in the project, also read `references/llm-stability.md`.
+If an LLM picks, rates or decides anything in the project, also read `references/llm-stability.md`. If the project picks trades, assets or entry times, by rules or by an LLM, also read `references/random-entry.md`.
 
 ## Order and fixing
 
